@@ -9,7 +9,7 @@
 
 ![Screenshot](./screenshot.png)
 
-**langlib_chinese_test** — an integration test and demo mod for [langLib_zh_hans](https://github.com/Bli-AIk/kristal-langlib-zh-hans), used to verify and demonstrate Chinese localization capabilities for Kristal mods.
+**langlib_chinese_test** — an integration test and demo mod for [kristal-i18n](https://github.com/Bli-AIk/kristal-i18n), used to verify and demonstrate Chinese localization capabilities for Kristal mods.
 
 | English | 简体中文                |
 | ------- | ----------------------- |
@@ -17,7 +17,7 @@
 
 ## Introduction
 
-`langlib_chinese_test` is a Kristal test mod that fully demonstrates the localization capabilities of the `langLib_zh_hans` library. It covers text, menus, items, spells, character names, Tiled maps/NPCs/Interactables, and more — all with F7 real-time language toggling.
+`langlib_chinese_test` is a Kristal test mod that fully demonstrates the localization capabilities of the `kristal-i18n` library. It covers text, menus, items, spells, character names, Tiled maps/NPCs/Interactables, and more — all with F7 real-time language toggling.
 
 This mod also serves as an integration validation tool during library development — each localization entry point has a corresponding test case here, ensuring library updates don't break existing functionality.
 
@@ -36,7 +36,7 @@ This mod also serves as an integration validation tool during library developmen
 | Library                                                               | Description                     |
 | --------------------------------------------------------------------- | ------------------------------- |
 | [Kristal](https://github.com/KristalTeam/Kristal)                     | Game engine, `v0.10.0` or later |
-| [langLib_zh_hans](https://github.com/Bli-AIk/kristal-langlib-zh-hans) | Chinese localization library    |
+| [kristal-i18n](https://github.com/Bli-AIk/kristal-i18n) | Chinese localization library    |
 
 ## How to Use
 

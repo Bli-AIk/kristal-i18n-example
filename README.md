@@ -9,7 +9,7 @@
 
 ![效果图](./screenshot.png)
 
-**langlib_chinese_test** — [langLib_zh_hans](https://github.com/Bli-AIk/kristal-langlib-zh-hans) 的集成测试与演示模组，用于验证和展示 Kristal 模组的中文汉化能力。
+**langlib_chinese_test** — [kristal-i18n](https://github.com/Bli-AIk/kristal-i18n) 的集成测试与演示模组，用于验证和展示 Kristal 模组的中文汉化能力。
 
 | 简体中文 | English                   |
 | -------- | ------------------------- |
@@ -17,7 +17,7 @@
 
 ## 简介
 
-`langlib_chinese_test` 是一个 Kristal 测试模组，完整演示了 `langLib_zh_hans` 库的各项汉化能力。它覆盖了文本、菜单、物品、技能、角色名、Tiled 地图/NPC/Interactable 等常见入口的本地化，并内置 F7 实时语言切换。
+`langlib_chinese_test` 是一个 Kristal 测试模组，完整演示了 `kristal-i18n` 库的各项汉化能力。它覆盖了文本、菜单、物品、技能、角色名、Tiled 地图/NPC/Interactable 等常见入口的本地化，并内置 F7 实时语言切换。
 
 本模组同时也是汉化库开发过程中的集成验证工具——每个汉化入口在此都有对应的测试用例，确保库更新不破坏已有功能。
 
@@ -36,7 +36,7 @@
 | 库                                                                    | 说明                           |
 | --------------------------------------------------------------------- | ------------------------------ |
 | [Kristal](https://github.com/KristalTeam/Kristal)                     | 游戏引擎，`v0.10.0` 或更高版本 |
-| [langLib_zh_hans](https://github.com/Bli-AIk/kristal-langlib-zh-hans) | 中文本地化库                   |
+| [kristal-i18n](https://github.com/Bli-AIk/kristal-i18n) | 中文本地化库                   |
 
 ## 使用方式
 
