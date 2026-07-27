@@ -5,6 +5,7 @@
     "map_room2_name": "测试地图 - 房间 2",
 
     "encounter_dummy_start": "* 教学开始了...？",
+    "enemy_dummy_dialogue": "大家好啊，我是[name:dummy]对话文本测试\n说话 speak 111 哇嗷！",
     "enemy_dummy_check": "攻击 4 防御 0\n* 棉花心和纽扣眼。\n* 看起来就像个毛茸茸的小家伙。",
     "enemy_dummy_turn_1": "* [name:dummy]露出了柔和的\n微笑。",
     "enemy_dummy_turn_2": "* 毛茸茸男孩的力量\n弥漫在空气中。",

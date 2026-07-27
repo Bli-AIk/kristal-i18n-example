@@ -27,11 +27,6 @@ function Dummy:init()
         "movingarena"
     }
 
-    -- Dialogue randomly displayed in the enemy's speech bubble
-    self.dialogue = {
-        "..."
-    }
-
     -- Register act called "Smile"
     self:registerAct(self.act_smile)
     -- Register party act with Ralsei called "Tell Story"
@@ -46,6 +41,10 @@ function Dummy:applyLocalization(update_acts)
 
     -- Enemy name
     self.name = Game:locText("[name:dummy]")
+    -- Dialogue randomly displayed in the enemy's speech bubble
+    self.dialogue = {
+        Game:loc("enemy_dummy_dialogue")
+    }
     -- Check text (automatically has "ENEMY NAME - " at the start)
     self.check = Game:loc("enemy_dummy_check")
 

@@ -5,6 +5,7 @@
     "map_room2_name": "Test Map - Room 2",
 
     "encounter_dummy_start": "* The tutorial begins...?",
+    "enemy_dummy_dialogue": "Hello everyone, I'm [name:dummy], dialogue text test\nSpeaking speak 111 wow!",
     "enemy_dummy_check": "AT 4 DF 0\n* Cotton heart and button eye\n* Looks just like a fluffy guy.",
     "enemy_dummy_turn_1": "* The [name:dummy] gives you a soft\nsmile.",
     "enemy_dummy_turn_2": "* The power of fluffy boys is\nin the air.",
