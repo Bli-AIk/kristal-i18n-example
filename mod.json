@@ -1,8 +1,8 @@
 {
     // The ID of your project. Should be unique!!
-    "id": "langlib_chinese_test",
+    "id": "langlib-chinese-test",
     // Displays on the main menu.
-    "name": "langlib_chinese_test",
+    "name": "langlib-chinese-test",
     // Displays underneath the name. Optional.
     "subtitle": "",
 

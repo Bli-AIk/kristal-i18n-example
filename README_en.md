@@ -1,4 +1,4 @@
-# langlib_chinese_test
+# langlib-chinese-test
 
 [![license](https://img.shields.io/badge/license-MIT%2FApache--2.0-blue)](LICENSE-APACHE)
 <br>
@@ -9,7 +9,7 @@
 
 ![Screenshot](./screenshot.png)
 
-**langlib_chinese_test** — an integration test and demo mod for [kristal-i18n](https://github.com/Bli-AIk/kristal-i18n), used to verify and demonstrate Chinese localization capabilities for Kristal mods.
+**langlib-chinese-test** — an integration test and demo mod for [kristal-i18n](https://github.com/Bli-AIk/kristal-i18n), used to verify and demonstrate Chinese localization capabilities for Kristal mods.
 
 | English | 简体中文                |
 | ------- | ----------------------- |
@@ -17,7 +17,7 @@
 
 ## Introduction
 
-`langlib_chinese_test` is a Kristal test mod that fully demonstrates the localization capabilities of the `kristal-i18n` library. It covers text, menus, items, spells, character names, Tiled maps/NPCs/Interactables, and more — all with F7 real-time language toggling.
+`langlib-chinese-test` is a Kristal test mod that fully demonstrates the localization capabilities of the `kristal-i18n` library. It covers text, menus, items, spells, character names, Tiled maps/NPCs/Interactables, and more — all with F7 real-time language toggling.
 
 This mod also serves as an integration validation tool during library development — each localization entry point has a corresponding test case here, ensuring library updates don't break existing functionality.
 
@@ -45,12 +45,12 @@ This mod also serves as an integration validation tool during library developmen
 
    ```bash
    cd Kristal/mods
-   git clone https://github.com/Bli-AIk/langlib_chinese_test.git
-   cd langlib_chinese_test
+   git clone https://github.com/Bli-AIk/langlib-chinese-test.git
+   cd langlib-chinese-test
    git submodule update --init
    ```
 
-3. Launch Kristal and select **langlib_chinese_test** from the mod menu.
+3. Launch Kristal and select **langlib-chinese-test** from the mod menu.
 4. Press F7 to switch between Chinese and English at any time.
 
 ## References
