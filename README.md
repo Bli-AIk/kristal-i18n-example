@@ -35,7 +35,7 @@
 - 🗺️ Tiled NPC / Interactable 的 `text1`/`text2` 属性直接写 `{key}`
 - 🏷️ Tiled 地图名通过 `name_id` 属性本地化
 - ⚔️ 物品、武器、防具、法术自动 key 化
-- 🔤 中文字体 fallback：英文用原版字体，中文回落至 FZBitmap/Unifont
+- 🔤 混合字体：同一段文本中英文/ASCII 用原版 8bitOperator 字形，中文字符自动回落至 FZBitmap / Unifont 点阵字体
 
 ## 依赖
 

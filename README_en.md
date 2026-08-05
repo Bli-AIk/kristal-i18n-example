@@ -35,7 +35,7 @@ This mod translates all English content of the Kristal `v0.10.0` template into C
 - 🗺️ Tiled NPC / Interactable `text1`/`text2` properties accept `{key}` directly
 - 🏷️ Tiled map names localized via the `name_id` property
 - ⚔️ Items, weapons, armors, and spells auto-keyed
-- 🔤 Chinese font fallback: original font for English, FZBitmap/Unifont for Chinese
+- 🔤 Hybrid fonts: within the same text, English/ASCII uses the original 8bitOperator glyphs while Chinese characters automatically fall back to the FZBitmap / Unifont bitmap fonts
 
 ## Dependencies
 
