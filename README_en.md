@@ -5,34 +5,39 @@
 <img src="https://img.shields.io/badge/Lua-2C2D72?style=for-the-badge&logo=lua&logoColor=white" />
 <img src="https://img.shields.io/badge/Kristal-FF6B35?style=for-the-badge&logo=love2d&logoColor=white" />
 
-> Current Status: ✅ Test Mod
+> Current Status: ✅ Test mod
 
-![Screenshot](./screenshot.png)
+![In battle](./screenshot-battle.png)
 
-**kristal-i18n-example** — an integration test and demo mod for [kristal-i18n](https://github.com/Bli-AIk/kristal-i18n), used to verify and demonstrate Chinese localization capabilities for Kristal mods.
+<details>
+<summary>More screenshots (save screen / ability / debug / light world inventory)</summary>
 
-This mod is dedicated to providing a complete Chinese localization of Kristal's built-in template mod. Its Chinese text follows the translation by the 好人汉化组.
+![Save screen](./screenshot.png)
+
+![Ability screen](./screenshot-ability.png)
+
+![Debug screen](./screenshot-debug.png)
+
+![Light world inventory](./screenshot-light-inventory.png)
+
+</details>
+
+**kristal-i18n-example** — an integration test and demo mod for [kristal-i18n](https://github.com/Bli-AIk/kristal-i18n).
+
+This mod translates all English content of the Kristal `v0.10.0` template into Chinese following the [Goodman 3 Localization Group](https://github.com/gm3dr/) translations, and adds an extra light world area to test light world dialogue. It is used to verify and demonstrate the library's localization capabilities. Players can switch between Chinese and English in the in-game **settings menu**.
 
 | English | 简体中文                |
 | ------- | ----------------------- |
 | English | [简体中文](./README.md) |
 
-## Introduction
-
-`kristal-i18n-example` is a Kristal test mod that fully demonstrates the localization capabilities of the `kristal-i18n` library. It covers text, menus, items, spells, character names, Tiled maps/NPCs/Interactables, and more — all with F7 real-time language toggling.
-
-This mod also serves as an integration validation tool during library development — each localization entry point has a corresponding test case here, ensuring library updates don't break existing functionality.
-
 ## Features
 
-- 🌐 Bilingual (Chinese/English), toggle anytime with F7
-- 📝 Cutscene text localized by `id`
-- 🎛️ Cutscene choices localized by `ids`
-- 🧩 Every text API accepts only `id`, only text, or both with `id` taking precedence
-- 🗺️ Tiled NPC / Interactable localization uses `id1`/`id2` as the authoritative source; duplicate `text1`/`text2` values are unnecessary
-- 🏷️ Tiled map name localization via `name_id` property
-- ⚔️ Auto-keyed items, weapons, armor, spells
-- 🔤 CJK font fallback: English uses original fonts, Chinese falls back to FZBitmap/Unifont
+- 🌐 Bilingual (Chinese/English), switchable in the settings menu
+- 📝 Text localized via `{id}` interpolation: `cutscene:text("{room1.hello}")`
+- 🗺️ Tiled NPC / Interactable `text1`/`text2` properties accept `{key}` directly
+- 🏷️ Tiled map names localized via the `name_id` property
+- ⚔️ Items, weapons, armors, and spells auto-keyed
+- 🔤 Chinese font fallback: original font for English, FZBitmap/Unifont for Chinese
 
 ## Dependencies
 
@@ -54,16 +59,10 @@ This mod also serves as an integration validation tool during library developmen
    ```
 
 3. Launch Kristal and select **kristal-i18n-example** from the mod menu.
-4. Press F7 to switch between Chinese and English at any time.
 
 ## References
 
-The localization approach in this project references the following projects:
-
-| Project                                                       | Author/Organization                                    |
-| ------------------------------------------------------------- | ------------------------------------------------------ |
-| Chinese localization references from other Kristal projects   | [WasneetPotato](https://space.bilibili.com/1641628190) |
-| [DeltaruneChinese](https://github.com/gm3dr/DeltaruneChinese) | dr好人汉化组                                           |
+Localized text follows the [Goodman 3 Localization Group | UNDERTALE & DELTARUNE Chinese Localization](https://github.com/gm3dr/) translations.
 
 ## Contributing
 
