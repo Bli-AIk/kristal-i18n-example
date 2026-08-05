@@ -92,14 +92,14 @@
   <object id="19" name="npc" x="480" y="840" width="40" height="40">
    <properties>
     <property name="actor" value="starwalker"/>
-    <property name="id1" value="world_room1_starwalker_1"/>
-    <property name="id2" value="world_room1_starwalker_2"/>
+    <property name="text1" value="{world_room1_starwalker_1}"/>
+    <property name="text2" value="{world_room1_starwalker_2}"/>
    </properties>
   </object>
   <object id="27" name="savepoint" x="80" y="210" width="40" height="40">
    <properties>
-    <property name="id1" value="world_room1_savepoint_1"/>
-    <property name="id2" value="world_room1_savepoint_2"/>
+    <property name="text1" value="{world_room1_savepoint_1}"/>
+    <property name="text2" value="{world_room1_savepoint_2}"/>
    </properties>
   </object>
   <object id="28" name="squeak" x="680" y="600" width="40" height="40"/>
@@ -119,7 +119,7 @@
    <properties>
     <property name="actor" value="wall"/>
     <property name="flagcheck" value="wall_hit"/>
-    <property name="id1" value="world_room1_wall_guardian_1"/>
+    <property name="text1" value="{world_room1_wall_guardian_1}"/>
    </properties>
    <point/>
   </object>

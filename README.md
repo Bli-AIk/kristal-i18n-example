@@ -28,6 +28,7 @@
 - 🌐 中英双语，F7 一键切换
 - 📝 Cutscene 文本按 `id` 本地化
 - 🎛️ Cutscene 选项按 `ids` 本地化
+- 🧩 所有文本 API 支持只写 `id`、只写文本，或两者并存且 `id` 优先
 - 🗺️ Tiled NPC / Interactable 以 `id1`/`id2` 为权威来源本地化，无需重复填写 `text1`/`text2`
 - 🏷️ Tiled 地图名通过 `name_id` 属性本地化
 - ⚔️ 物品、武器、防具、法术自动 key 化

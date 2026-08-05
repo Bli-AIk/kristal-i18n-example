@@ -1,5 +1,5 @@
 return {
-  version = "1.11",
+  version = "1.10",
   luaversion = "5.1",
   tiledversion = "1.12.2",
   class = "",
@@ -464,8 +464,8 @@ return {
           visible = true,
           properties = {
             ["actor"] = "starwalker",
-            ["id1"] = "world_room1_starwalker_1",
-            ["id2"] = "world_room1_starwalker_2"
+            ["text1"] = "{world_room1_starwalker_1}",
+            ["text2"] = "{world_room1_starwalker_2}"
           }
         },
         {
@@ -481,8 +481,8 @@ return {
           opacity = 1,
           visible = true,
           properties = {
-            ["id1"] = "world_room1_savepoint_1",
-            ["id2"] = "world_room1_savepoint_2"
+            ["text1"] = "{world_room1_savepoint_1}",
+            ["text2"] = "{world_room1_savepoint_2}"
           }
         },
         {
@@ -548,7 +548,7 @@ return {
           properties = {
             ["actor"] = "wall",
             ["flagcheck"] = "wall_hit",
-            ["id1"] = "world_room1_wall_guardian_1"
+            ["text1"] = "{world_room1_wall_guardian_1}"
           }
         },
         {

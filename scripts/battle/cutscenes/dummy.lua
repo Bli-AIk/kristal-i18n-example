@@ -5,7 +5,8 @@ return {
     ---@param cutscene BattleCutscene
     susie_punch = function(cutscene, battler, enemy)
         -- Open textbox and wait for completion
-        cutscene:text(Game:loc("battle_dummy_susie_punch_1"))
+        -- {id} interpolation: the string is looked up in the language table
+        cutscene:text("{battle_dummy_susie_punch_1}")
 
         -- Hurt the target enemy for 1 damage
         Assets.playSound("damage")
@@ -14,11 +15,11 @@ return {
         cutscene:wait(1)
 
         -- Susie text
-        cutscene:text(Game:loc("battle_dummy_susie_punch_2"), "nervous_side", "susie")
+        cutscene:text("{battle_dummy_susie_punch_2}", "nervous_side", "susie")
 
         if cutscene:getCharacter("ralsei") then
             -- Ralsei text, if he's in the party
-            cutscene:text(Game:loc("battle_dummy_susie_punch_3"), "blush_pleased", "ralsei")
+            cutscene:text("{battle_dummy_susie_punch_3}", "blush_pleased", "ralsei")
         end
     end
 }

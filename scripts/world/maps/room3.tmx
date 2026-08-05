@@ -66,8 +66,8 @@
   <object id="16" name="npc" x="440" y="160" width="40" height="40">
    <properties>
     <property name="actor" value="starwalker"/>
-    <property name="id1" value="world_room1_starwalker_1"/>
-    <property name="id2" value="world_room1_starwalker_2"/>
+    <property name="text1" value="{world_room1_starwalker_1}"/>
+    <property name="text2" value="{world_room1_starwalker_2}"/>
    </properties>
   </object>
  </objectgroup>
