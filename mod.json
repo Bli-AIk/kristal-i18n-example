@@ -1,8 +1,8 @@
 {
     // The ID of your project. Should be unique!!
-    "id": "langlib-chinese-test",
+    "id": "kristal-i18n-example",
     // Displays on the main menu.
-    "name": "langlib-chinese-test",
+    "name": "kristal-i18n-example",
     // Displays underneath the name. Optional.
     "subtitle": "",
 

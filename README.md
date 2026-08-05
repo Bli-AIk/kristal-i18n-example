@@ -1,4 +1,4 @@
-# langlib-chinese-test
+# kristal-i18n-example
 
 [![license](https://img.shields.io/badge/license-MIT%2FApache--2.0-blue)](LICENSE-APACHE)
 <br>
@@ -9,7 +9,9 @@
 
 ![效果图](./screenshot.png)
 
-**langlib-chinese-test** — [kristal-i18n](https://github.com/Bli-AIk/kristal-i18n) 的集成测试与演示模组，用于验证和展示 Kristal 模组的中文汉化能力。
+**kristal-i18n-example** — [kristal-i18n](https://github.com/Bli-AIk/kristal-i18n) 的集成测试与演示模组，用于验证和展示 Kristal 模组的中文汉化能力。
+
+本模组致力于完整实现 Kristal 内置模板模组的中文汉化。中文文本以好人汉化组的文本为准。
 
 | 简体中文 | English                   |
 | -------- | ------------------------- |
@@ -17,7 +19,7 @@
 
 ## 简介
 
-`langlib-chinese-test` 是一个 Kristal 测试模组，完整演示了 `kristal-i18n` 库的各项汉化能力。它覆盖了文本、菜单、物品、技能、角色名、Tiled 地图/NPC/Interactable 等常见入口的本地化，并内置 F7 实时语言切换。
+`kristal-i18n-example` 是一个 Kristal 测试模组，完整演示了 `kristal-i18n` 库的各项汉化能力。它覆盖了文本、菜单、物品、技能、角色名、Tiled 地图/NPC/Interactable 等常见入口的本地化，并内置 F7 实时语言切换。
 
 本模组同时也是汉化库开发过程中的集成验证工具——每个汉化入口在此都有对应的测试用例，确保库更新不破坏已有功能。
 
@@ -45,12 +47,12 @@
 
    ```bash
    cd Kristal/mods
-   git clone https://github.com/Bli-AIk/langlib-chinese-test.git
-   cd langlib-chinese-test
+   git clone https://github.com/Bli-AIk/kristal-i18n-example.git
+   cd kristal-i18n-example
    git submodule update --init
    ```
 
-3. 启动 Kristal，在模组选择中选择 **langlib-chinese-test**。
+3. 启动 Kristal，在模组选择中选择 **kristal-i18n-example**。
 4. 按 F7 可随时切换中英文。
 
 ## 参考来源
