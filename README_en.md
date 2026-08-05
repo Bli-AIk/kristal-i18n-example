@@ -28,7 +28,7 @@ This mod also serves as an integration validation tool during library developmen
 - 🌐 Bilingual (Chinese/English), toggle anytime with F7
 - 📝 Cutscene text localized by `id`
 - 🎛️ Cutscene choices localized by `ids`
-- 🗺️ Tiled NPC / Interactable localization via `id1`/`id2` properties
+- 🗺️ Tiled NPC / Interactable localization uses `id1`/`id2` as the authoritative source; duplicate `text1`/`text2` values are unnecessary
 - 🏷️ Tiled map name localization via `name_id` property
 - ⚔️ Auto-keyed items, weapons, armor, spells
 - 🔤 CJK font fallback: English uses original fonts, Chinese falls back to FZBitmap/Unifont

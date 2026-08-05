@@ -465,9 +465,7 @@ return {
           properties = {
             ["actor"] = "starwalker",
             ["id1"] = "world_room1_starwalker_1",
-            ["id2"] = "world_room1_starwalker_2",
-            ["text1"] = "* These [color:yellow]stairs[color:reset] are [color:yellow]Pissing[color:reset] me\noff...",
-            ["text2"] = "* I'm the original   [color:yellow][name:starwalker][color:reset]"
+            ["id2"] = "world_room1_starwalker_2"
           }
         },
         {
@@ -484,9 +482,7 @@ return {
           visible = true,
           properties = {
             ["id1"] = "world_room1_savepoint_1",
-            ["id2"] = "world_room1_savepoint_2",
-            ["text1"] = "* Silence echoes in the darkness\nof this familiar-yet-different\nscenery.",
-            ["text2"] = "* The power of avoiding copying\nofficial music shines within\nyou."
+            ["id2"] = "world_room1_savepoint_2"
           }
         },
         {
@@ -552,8 +548,7 @@ return {
           properties = {
             ["actor"] = "wall",
             ["flagcheck"] = "wall_hit",
-            ["id1"] = "world_room1_wall_guardian_1",
-            ["text1"] = "* I Am the [name:wall] Guardian.[wait:5]\n* This [name:wall] is Off Limits for you\nno-good wall slammers."
+            ["id1"] = "world_room1_wall_guardian_1"
           }
         },
         {

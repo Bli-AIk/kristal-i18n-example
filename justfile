@@ -33,11 +33,22 @@ run *args:
     cd "$engine_root"
     exec love "$engine_root" --mod kristal-i18n-example --auto-mod-start {{ args }}
 
-test: test-static
+test: test-static test-tiled
 
 test-static:
     @jq empty lang/en.json lang/zh_hans.json libraries/kristal-i18n/lib.json libraries/kristal-i18n/lang/en.json libraries/kristal-i18n/lang/zh_hans.json
     @find scripts libraries -type f -name '*.lua' -print0 | xargs -0 -n1 luac -p
+
+test-tiled:
+    #!/usr/bin/env bash
+    set -euo pipefail
+    for map_file in scripts/world/maps/*.tmx; do
+        paired_count=$(xmllint --xpath 'count(//object[properties/property[starts-with(@name, "id")]][properties/property[starts-with(@name, "text")]])' "$map_file")
+        if [ "$paired_count" -ne 0 ]; then
+            printf 'Tiled object in %s has both id* and text* properties.\n' "$map_file" >&2
+            exit 1
+        fi
+    done
 
 # Run the Kristal smoke test explicitly because it starts the game process.
 test-kristal:

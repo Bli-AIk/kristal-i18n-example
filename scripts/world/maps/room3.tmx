@@ -68,9 +68,6 @@
     <property name="actor" value="starwalker"/>
     <property name="id1" value="world_room1_starwalker_1"/>
     <property name="id2" value="world_room1_starwalker_2"/>
-    <property name="text1">* These [color:yellow]stairs[color:reset] are [color:yellow]Pissing[color:reset] me
-off...</property>
-    <property name="text2" value="* I'm the original   [color:yellow][name:starwalker][color:reset]"/>
    </properties>
   </object>
  </objectgroup>

@@ -5,9 +5,7 @@ return {
     ---@param cutscene BattleCutscene
     susie_punch = function(cutscene, battler, enemy)
         -- Open textbox and wait for completion
-        cutscene:text("* [name:susie] threw a punch at\nthe [name:dummy].", nil, nil, {
-            id = "battle_dummy_susie_punch_1"
-        })
+        cutscene:text(Game:loc("battle_dummy_susie_punch_1"))
 
         -- Hurt the target enemy for 1 damage
         Assets.playSound("damage")
@@ -16,15 +14,11 @@ return {
         cutscene:wait(1)
 
         -- Susie text
-        cutscene:text("* You,[wait:5] uh,[wait:5] look like a weenie.[wait:5]\n* I don't like beating up\npeople like that.", "nervous_side", "susie", {
-            id = "battle_dummy_susie_punch_2"
-        })
+        cutscene:text(Game:loc("battle_dummy_susie_punch_2"), "nervous_side", "susie")
 
         if cutscene:getCharacter("ralsei") then
             -- Ralsei text, if he's in the party
-            cutscene:text("* Aww,[wait:5] [name:susie]!", "blush_pleased", "ralsei", {
-                id = "battle_dummy_susie_punch_3"
-            })
+            cutscene:text(Game:loc("battle_dummy_susie_punch_3"), "blush_pleased", "ralsei")
         end
     end
 }

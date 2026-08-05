@@ -265,9 +265,7 @@ return {
           properties = {
             ["actor"] = "starwalker",
             ["id1"] = "world_room1_starwalker_1",
-            ["id2"] = "world_room1_starwalker_2",
-            ["text1"] = "* These [color:yellow]stairs[color:reset] are [color:yellow]Pissing[color:reset] me\noff...",
-            ["text2"] = "* I'm the original   [color:yellow][name:starwalker][color:reset]"
+            ["id2"] = "world_room1_starwalker_2"
           }
         }
       }
