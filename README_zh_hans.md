@@ -47,13 +47,18 @@
 ## 使用方式
 
 1. 安装 [Kristal](https://github.com/KristalTeam/Kristal) 引擎。
-2. 将本仓库克隆到 Kristal 的 `mods/` 目录下，并初始化 submodule：
+2. 将本仓库克隆到 Kristal 的 `mods/` 目录下。**注意：[kristal-i18n](https://github.com/Bli-AIk/kristal-i18n) 库是以 git 子模块的形式引入的，普通的 `git clone` 不会下载它——克隆时记得拉取子模块。** 可以用 `--recurse-submodules` 一步到位：
 
    ```bash
    cd Kristal/mods
-   git clone https://github.com/Bli-AIk/kristal-i18n-example.git
+   git clone --recurse-submodules https://github.com/Bli-AIk/kristal-i18n-example.git
+   ```
+
+   如果已经克隆完成、发现没有子模块，事后补拉也可以：
+
+   ```bash
    cd kristal-i18n-example
-   git submodule update --init
+   git submodule update --init --recursive
    ```
 
 3. 启动 Kristal，在模组选择中选择 **kristal-i18n-example**。

@@ -47,13 +47,18 @@ This mod translates all English content of the Kristal `v0.10.0` template into C
 ## How to Use
 
 1. Install the [Kristal](https://github.com/KristalTeam/Kristal) engine.
-2. Clone this repository into Kristal's `mods/` directory and initialize submodules:
+2. Clone this repository into Kristal's `mods/` directory. **The [kristal-i18n](https://github.com/Bli-AIk/kristal-i18n) library is included as a git submodule, and a plain `git clone` does not download it — remember to pull the submodules.** Either clone with `--recurse-submodules`:
 
    ```bash
    cd Kristal/mods
-   git clone https://github.com/Bli-AIk/kristal-i18n-example.git
+   git clone --recurse-submodules https://github.com/Bli-AIk/kristal-i18n-example.git
+   ```
+
+   or, if you already cloned without submodules, initialize them afterwards:
+
+   ```bash
    cd kristal-i18n-example
-   git submodule update --init
+   git submodule update --init --recursive
    ```
 
 3. Launch Kristal and select **kristal-i18n-example** from the mod menu.
