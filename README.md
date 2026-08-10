@@ -5,49 +5,49 @@
 <img src="https://img.shields.io/badge/Lua-2C2D72?style=for-the-badge&logo=lua&logoColor=white" />
 <img src="https://img.shields.io/badge/Kristal-FF6B35?style=for-the-badge&logo=love2d&logoColor=white" />
 
-![战斗内展示](./screenshot-battle.png)
+![In battle](./screenshot-battle.png)
 
 <details>
-<summary>更多截图（存档页面 / 角色能力 / 调试界面 / 光世界背包）</summary>
+<summary>More screenshots (save screen / ability / debug / light world inventory)</summary>
 
-![存档页面](./screenshot.png)
+![Save screen](./screenshot.png)
 
-![角色能力页面](./screenshot-ability.png)
+![Ability screen](./screenshot-ability.png)
 
-![调试界面](./screenshot-debug.png)
+![Debug screen](./screenshot-debug.png)
 
-![光世界背包](./screenshot-light-inventory.png)
+![Light world inventory](./screenshot-light-inventory.png)
 
 </details>
 
-**kristal-i18n-example** — [kristal-i18n](https://github.com/Bli-AIk/kristal-i18n) 的集成测试与演示模组。
+**kristal-i18n-example** — an integration test and demo mod for [kristal-i18n](https://github.com/Bli-AIk/kristal-i18n).
 
-本模组把 Kristal `v0.10.0` 模板的所有英文内容都按照 [好人汉化组](https://github.com/gm3dr/) 的翻译进行了汉化，并额外加入了一个光世界场景用于测试光世界对话，用于验证和展示库的各项本地化能力。玩家可以在游戏内的**设置菜单**中切换中英文。
+This mod translates all English content of the Kristal `v0.10.0` template into Chinese following the [Goodman 3 Localization Group](https://github.com/gm3dr/) translations, and adds an extra light world area to test light world dialogue. It is used to verify and demonstrate the library's localization capabilities. Players can switch between Chinese and English in the in-game **settings menu**.
 
-| 简体中文 | English                   |
-| -------- | ------------------------- |
-| 简体中文 | [English](./README_en.md) |
+| English | 简体中文                |
+| ------- | ----------------------- |
+| English | [简体中文](./README_zh_hans.md) |
 
-## 特性
+## Features
 
-- 🌐 中英双语，设置菜单一键切换
-- 📝 文本用 `{id}` 内插本地化：`cutscene:text("{room1.hello}")`
-- 🗺️ Tiled NPC / Interactable 的 `text1`/`text2` 属性直接写 `{key}`
-- 🏷️ Tiled 地图名通过 `name_id` 属性本地化
-- ⚔️ 物品、武器、防具、法术自动 key 化
-- 🔤 混合字体：同一段文本中英文/ASCII 用原版 8bitOperator 字形，中文字符自动回落至 FZBitmap / Unifont 点阵字体
+- 🌐 Bilingual (Chinese/English), switchable in the settings menu
+- 📝 Text localized via `{id}` interpolation: `cutscene:text("{room1.hello}")`
+- 🗺️ Tiled NPC / Interactable `text1`/`text2` properties accept `{key}` directly
+- 🏷️ Tiled map names localized via the `name_id` property
+- ⚔️ Items, weapons, armors, and spells auto-keyed
+- 🔤 Hybrid fonts: within the same text, English/ASCII uses the original 8bitOperator glyphs while Chinese characters automatically fall back to the FZBitmap / Unifont bitmap fonts
 
-## 依赖
+## Dependencies
 
-| 库                                                                    | 说明                           |
-| --------------------------------------------------------------------- | ------------------------------ |
-| [Kristal](https://github.com/KristalTeam/Kristal)                     | 游戏引擎，`v0.10.0` 或更高版本 |
-| [kristal-i18n](https://github.com/Bli-AIk/kristal-i18n) | 中文本地化库                   |
+| Library                                                               | Description                     |
+| --------------------------------------------------------------------- | ------------------------------- |
+| [Kristal](https://github.com/KristalTeam/Kristal)                     | Game engine, `v0.10.0` or later |
+| [kristal-i18n](https://github.com/Bli-AIk/kristal-i18n) | Chinese localization library    |
 
-## 使用方式
+## How to Use
 
-1. 安装 [Kristal](https://github.com/KristalTeam/Kristal) 引擎。
-2. 将本仓库克隆到 Kristal 的 `mods/` 目录下，并初始化 submodule：
+1. Install the [Kristal](https://github.com/KristalTeam/Kristal) engine.
+2. Clone this repository into Kristal's `mods/` directory and initialize submodules:
 
    ```bash
    cd Kristal/mods
@@ -56,19 +56,25 @@
    git submodule update --init
    ```
 
-3. 启动 Kristal，在模组选择中选择 **kristal-i18n-example**。
+3. Launch Kristal and select **kristal-i18n-example** from the mod menu.
 
-## 参考来源
+## References
 
-汉化文本以 [好人汉化组（Goodman 3 Localization Group | UNDERTALE & DELTARUNE Chinese Localization）](https://github.com/gm3dr/) 为准。
+Localized text follows the [Goodman 3 Localization Group | UNDERTALE & DELTARUNE Chinese Localization](https://github.com/gm3dr/) translations.
 
-## 参与贡献
+## Contributing
 
-欢迎提交 Issue 或 Pull Request。
+Issues and Pull Requests are welcome.
 
-## 许可证
+I fully support and welcome pull requests for translations in your language! That's exactly why I created this localization library—to help everyone make games and translate existing ones in their native languages.
 
-本项目采用双许可证授权，您可以选择以下任一许可证：
+This mod focuses on **template translation** — translating the vanilla Kristal template content. To contribute a translation, see the [contributing guide](CONTRIBUTING.md) (简体中文版：[CONTRIBUTING_zh_hans.md](CONTRIBUTING_zh_hans.md)); for the framework's built-in texts, see the [kristal-i18n contributing guide](https://github.com/Bli-AIk/kristal-i18n/blob/main/CONTRIBUTING.md).
 
-- Apache License, Version 2.0 ([LICENSE-APACHE](LICENSE-APACHE) 或 http://www.apache.org/licenses/LICENSE-2.0)
-- MIT license ([LICENSE-MIT](LICENSE-MIT) 或 http://opensource.org/licenses/MIT)
+## License
+
+This project is licensed under either of
+
+- Apache License, Version 2.0 ([LICENSE-APACHE](LICENSE-APACHE) or http://www.apache.org/licenses/LICENSE-2.0)
+- MIT license ([LICENSE-MIT](LICENSE-MIT) or http://opensource.org/licenses/MIT)
+
+at your option.
