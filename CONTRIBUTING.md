@@ -10,7 +10,7 @@ Thank you for wanting to contribute! 🌍
 - **All hooks are already in place.** The [kristal-i18n](https://github.com/Bli-AIk/kristal-i18n) library handles every hook — you don't need to write a single line of Lua.
 - **Simplified Chinese is the complete reference.** The `lang/zh_hans.json` translation (based on the [Goodman 3 Localization Group](https://github.com/gm3dr/) localization) covers the whole template, showing exactly what a finished translation looks like.
 
-So this mod's contribution focus is **template translation**: translating the vanilla template content into your language. Translators only need to **translate** — copy the Chinese file, translate the values into your language, register your language — done. Players can switch to it from the in-game settings menu immediately.
+So this mod's contribution focus is **template translation**: translating the vanilla template content into your language. Translators only need to **translate** — copy any existing language file, translate the values into your language, register your language — done. Players can switch to it from the in-game settings menu immediately.
 
 I fully support and welcome pull requests for translations in your language! That's exactly why I created this localization library—to help everyone make games and translate existing ones in their native languages.
 
@@ -18,7 +18,7 @@ I fully support and welcome pull requests for translations in your language! Tha
 
 ## Adding a new language
 
-1. **Copy the reference file.** Copy `lang/zh_hans.json` to `lang/<your_language>.json` (e.g. `lang/fr.json` for French, `lang/ja.json` for Japanese).
+1. **Pick a starting file.** Copy any existing language file to `lang/<your_language>.json` (e.g. `lang/fr.json` for French, `lang/ja.json` for Japanese). `lang/zh_hans.json` is the most complete reference, but you can start from whichever language you read best.
 2. **Translate the values.** Translate every value into your language. Keep the **keys unchanged** — the game looks up text by key, and the keys are shared across all languages.
 3. **Register the language.** In `mod.json`, under `config.kristalI18n`, add your language ID to `languages` and its display name to `languageNames`:
    ```json
