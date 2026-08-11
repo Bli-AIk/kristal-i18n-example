@@ -32,6 +32,7 @@
 
 - 🌐 中英双语，设置菜单一键切换
 - 📝 文本用 `{id}` 内插本地化：`cutscene:text("{room1.hello}")`
+- 🎬 传说过场示例：Debug → Play Legend → example（`scripts/legends/example.lua`）
 - 🗺️ Tiled NPC / Interactable 的 `text1`/`text2` 属性直接写 `{key}`
 - 🏷️ Tiled 地图名通过 `name_id` 属性本地化
 - ⚔️ 物品、武器、防具、法术自动 key 化

@@ -27,6 +27,8 @@
  "world_room1_savepoint_1": "* Silence echoes in the darkness\nof this familiar-yet-different\nscenery.",
  "world_room1_savepoint_2": "* The power of avoiding copying\nofficial music shines within\nyou.",
  "world_room1_wall_guardian_1": "* I Am the [name:wall] Guardian.[wait:5]\n* This [name:wall] is Off Limits for you\nno-good wall slammers.",
+ "legend_example_demo": "This is a demo of a legend cutscene.",
+ "legend_example_ralsei": "Oh my, the illustration is a [name:ralsei], I know!\nBecause he's too cute!",
  "item_ultimate_candy_name": "UltimatCandy",
  "item_ultimate_candy_useName": "ULTIMATE CANDY",
  "item_ultimate_candy_effect": "Best\nhealing",

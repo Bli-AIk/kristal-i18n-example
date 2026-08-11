@@ -32,6 +32,7 @@ This mod translates all English content of the Kristal `v0.10.0` template into C
 
 - 🌐 Bilingual (Chinese/English), switchable in the settings menu
 - 📝 Text localized via `{id}` interpolation: `cutscene:text("{room1.hello}")`
+- 🎬 Legend cutscene demo: Debug → Play Legend → example (`scripts/legends/example.lua`)
 - 🗺️ Tiled NPC / Interactable `text1`/`text2` properties accept `{key}` directly
 - 🏷️ Tiled map names localized via the `name_id` property
 - ⚔️ Items, weapons, armors, and spells auto-keyed
