@@ -1,9 +1,7 @@
 # kristal-i18n-example
 
-[![license](https://img.shields.io/badge/license-MIT%2FApache--2.0-blue)](LICENSE-APACHE)
-<br>
-<img src="https://img.shields.io/badge/Lua-2C2D72?style=for-the-badge&logo=lua&logoColor=white" />
-<img src="https://img.shields.io/badge/Kristal-FF6B35?style=for-the-badge&logo=love2d&logoColor=white" />
+[![license](https://img.shields.io/badge/license-MIT%2FApache--2.0-blue)](LICENSE-APACHE) <img src="https://img.shields.io/github/repo-size/Bli-AIk/kristal-i18n-example.svg"/> <img src="https://img.shields.io/github/last-commit/Bli-AIk/kristal-i18n-example.svg"/> <img src="https://img.shields.io/github/v/release/Bli-AIk/kristal-i18n-example.svg"/> <br>
+<img src="https://img.shields.io/badge/Deltarune-001225?style=for-the-badge&labelColor=001225&logo=undertale&logoColor=ff0000" /> <img src="https://img.shields.io/badge/Lua-2C2D72?style=for-the-badge&logo=lua&logoColor=white" /> <img src="https://img.shields.io/badge/Kristal-FF6B35?style=for-the-badge&logo=love2d&logoColor=white" />
 
 ![In battle](./screenshot-battle.png)
 
@@ -24,9 +22,15 @@
 
 This mod translates all English content of the Kristal `v0.10.0` template into Chinese following the [Goodman 3 Localization Group](https://github.com/gm3dr/) translations, and adds an extra light world area to test light world dialogue. It is used to verify and demonstrate the library's localization capabilities. Players can switch between Chinese and English in the in-game **settings menu**.
 
-| English | 简体中文                |
-| ------- | ----------------------- |
+| English | 简体中文                        |
+| ------- | ------------------------------- |
 | English | [简体中文](./README_zh_hans.md) |
+
+## Kristal Version Support
+
+| `kristal`                                                                                                      | `kristal-i18n-example` |
+| -------------------------------------------------------------------------------------------------------------- | ---------------------- |
+| [v0.10.0](https://github.com/KristalTeam/Kristal/commit/752bc0688ba97ca8a256ba9125b7e05a1ca6edbd) (`752bc068`) | 0.0.0                  |
 
 ## Features
 
@@ -40,9 +44,9 @@ This mod translates all English content of the Kristal `v0.10.0` template into C
 
 ## Dependencies
 
-| Library                                                               | Description                     |
-| --------------------------------------------------------------------- | ------------------------------- |
-| [Kristal](https://github.com/KristalTeam/Kristal)                     | Game engine, `v0.10.0` or later |
+| Library                                                 | Description                     |
+| ------------------------------------------------------- | ------------------------------- |
+| [Kristal](https://github.com/KristalTeam/Kristal)       | Game engine, `v0.10.0` or later |
 | [kristal-i18n](https://github.com/Bli-AIk/kristal-i18n) | Chinese localization library    |
 
 ## How to Use

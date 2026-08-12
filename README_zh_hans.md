@@ -1,9 +1,7 @@
 # kristal-i18n-example
 
-[![license](https://img.shields.io/badge/license-MIT%2FApache--2.0-blue)](LICENSE-APACHE)
-<br>
-<img src="https://img.shields.io/badge/Lua-2C2D72?style=for-the-badge&logo=lua&logoColor=white" />
-<img src="https://img.shields.io/badge/Kristal-FF6B35?style=for-the-badge&logo=love2d&logoColor=white" />
+[![license](https://img.shields.io/badge/license-MIT%2FApache--2.0-blue)](LICENSE-APACHE) <img src="https://img.shields.io/github/repo-size/Bli-AIk/kristal-i18n-example.svg"/> <img src="https://img.shields.io/github/last-commit/Bli-AIk/kristal-i18n-example.svg"/> <img src="https://img.shields.io/github/v/release/Bli-AIk/kristal-i18n-example.svg"/> <br>
+<img src="https://img.shields.io/badge/Deltarune-001225?style=for-the-badge&labelColor=001225&logo=undertale&logoColor=ff0000" /> <img src="https://img.shields.io/badge/Lua-2C2D72?style=for-the-badge&logo=lua&logoColor=white" /> <img src="https://img.shields.io/badge/Kristal-FF6B35?style=for-the-badge&logo=love2d&logoColor=white" />
 
 ![战斗内展示](./screenshot-battle.png)
 
@@ -24,9 +22,15 @@
 
 本模组把 Kristal `v0.10.0` 模板的所有英文内容都按照 [好人汉化组](https://github.com/gm3dr/) 的翻译进行了汉化，并额外加入了一个光世界场景用于测试光世界对话，用于验证和展示库的各项本地化能力。玩家可以在游戏内的**设置菜单**中切换中英文。
 
-| 简体中文 | English                   |
-| -------- | ------------------------- |
+| 简体中文 | English                |
+| -------- | ---------------------- |
 | 简体中文 | [English](./README.md) |
+
+## Kristal 版本支持
+
+| `kristal`                                                                                                      | `kristal-i18n-example` |
+| -------------------------------------------------------------------------------------------------------------- | ---------------------- |
+| [v0.10.0](https://github.com/KristalTeam/Kristal/commit/752bc0688ba97ca8a256ba9125b7e05a1ca6edbd) (`752bc068`) | 0.0.0                  |
 
 ## 特性
 
@@ -40,9 +44,9 @@
 
 ## 依赖
 
-| 库                                                                    | 说明                           |
-| --------------------------------------------------------------------- | ------------------------------ |
-| [Kristal](https://github.com/KristalTeam/Kristal)                     | 游戏引擎，`v0.10.0` 或更高版本 |
+| 库                                                      | 说明                           |
+| ------------------------------------------------------- | ------------------------------ |
+| [Kristal](https://github.com/KristalTeam/Kristal)       | 游戏引擎，`v0.10.0` 或更高版本 |
 | [kristal-i18n](https://github.com/Bli-AIk/kristal-i18n) | 中文本地化库                   |
 
 ## 使用方式
