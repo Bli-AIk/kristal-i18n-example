@@ -28,9 +28,9 @@ This mod translates all English content of the Kristal `v0.10.0` template into C
 
 ## Kristal Version Support
 
-| `kristal`                                                                                                      | `kristal-i18n-example` |
-| -------------------------------------------------------------------------------------------------------------- | ---------------------- |
-| [v0.10.0](https://github.com/KristalTeam/Kristal/commit/752bc0688ba97ca8a256ba9125b7e05a1ca6edbd) (`752bc068`) | 0.0.0                  |
+| `kristal`                                                                                                                  | `kristal-i18n-example` |
+| -------------------------------------------------------------------------------------------------------------------------- | ---------------------- |
+| [v0.10.0](https://github.com/KristalTeam/Kristal/commit/752bc0688ba97ca8a256ba9125b7e05a1ca6edbd) (`752bc068`, 2026-06-23) | 0.0.0                  |
 
 ## Features
 
