@@ -25,7 +25,7 @@ jobs:
       - name: Install build dependencies
         run: |
           sudo apt-get update
-          sudo apt-get install -y just jq love luajit rsync unzip xvfb xmllint zip
+          sudo apt-get install -y just jq love luajit libxml2-utils rsync unzip xvfb zip
       - name: Check Lua source and documentation
         run: make test
       - name: Build standalone packages
