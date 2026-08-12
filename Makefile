@@ -8,7 +8,7 @@ test-static:
 	jq empty lang/en.json lang/zh_hans.json libraries/kristal-i18n/lib.json libraries/kristal-i18n/lang/en.json libraries/kristal-i18n/lang/zh_hans.json
 	jq -e '([keys[] | select(test("[^A-Za-z0-9_./-]"))] | length) == 0' libraries/kristal-i18n/lang/en.json >/dev/null
 	jq -e '([keys[] | select(test("[^A-Za-z0-9_./-]"))] | length) == 0' libraries/kristal-i18n/lang/zh_hans.json >/dev/null
-	find scripts libraries -type f -name '*.lua' -print0 | xargs -0 -n1 luac -p
+	find scripts libraries -type f -name '*.lua' -exec luajit -b {} /dev/null \;
 
 test-tiled:
 	@for map_file in scripts/world/maps/*.tmx; do \
