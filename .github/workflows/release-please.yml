@@ -45,7 +45,7 @@ jobs:
       - name: Install build dependencies
         run: |
           sudo apt-get update
-          sudo apt-get install -y jq love luajit rsync unzip xvfb zip
+          sudo apt-get install -y jq love luajit libxml2-utils rsync unzip xvfb zip
       - name: Verify source
         run: make test
       - name: Validate release version
@@ -64,7 +64,16 @@ jobs:
           )"
           test "$version" = "$RELEASE_TAG"
       - name: Package full source with submodules
-        run: ./.github/scripts/package_full_source.sh "${{ needs.release.outputs.tag_name }}"
+        run: |
+          set -euo pipefail
+          TAG="${{ needs.release.outputs.tag_name }}"
+          mkdir -p dist
+          # Unlike GitHub's auto-generated archives, include the checked-out
+          # submodule contents so the mod is complete and usable as-is.
+          tar --exclude='.git' --exclude='.build' --exclude='dist*' --exclude='.tools' --exclude='.worktrees' \
+            -czf "dist/kristal-i18n-example-$TAG-full-source.tar.gz" -C "$PWD" .
+          (cd "$PWD" && zip -qr "dist/kristal-i18n-example-$TAG-full-source.zip" . \
+            -x '.git*' '.build*' 'dist*' '.tools*' '.worktrees*')
 
       - name: Build release assets
         run: |
