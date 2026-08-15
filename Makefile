@@ -5,7 +5,10 @@ KRISTAL ?=
 test: test-static test-tiled
 
 test-static:
-	jq empty lang/en.json lang/zh_hans.json libraries/kristal-i18n/lib.json libraries/kristal-i18n/lang/en.json libraries/kristal-i18n/lang/zh_hans.json
+	# lib.json carries a release-please inline marker (// x-release-please-version);
+	# strip it before validating with jq.
+	jq empty lang/en.json lang/zh_hans.json libraries/kristal-i18n/lang/en.json libraries/kristal-i18n/lang/zh_hans.json
+	sed 's|// x-release-please-version||' libraries/kristal-i18n/lib.json | jq empty
 	jq -e '([keys[] | select(test("[^A-Za-z0-9_./-]"))] | length) == 0' libraries/kristal-i18n/lang/en.json >/dev/null
 	jq -e '([keys[] | select(test("[^A-Za-z0-9_./-]"))] | length) == 0' libraries/kristal-i18n/lang/zh_hans.json >/dev/null
 	find scripts libraries -type f -name '*.lua' -exec luajit -b {} /dev/null \;

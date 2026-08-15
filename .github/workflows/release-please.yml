@@ -63,6 +63,9 @@ jobs:
           PY
           )"
           test "$version" = "$RELEASE_TAG"
+      - name: Package full source with submodules
+        run: ./.github/scripts/package_full_source.sh "${{ needs.release.outputs.tag_name }}"
+
       - name: Build release assets
         run: |
           ./build_standalone.sh
@@ -80,5 +83,5 @@ jobs:
           RELEASE_TAG: ${{ needs.release.outputs.tag_name }}
         run: |
           set -euo pipefail
-          files=(dist/*.love dist/*-win64.zip dist/*-mod.zip dist/SHA256SUMS)
+          files=(dist/*.love dist/*-win64.zip dist/*-mod.zip dist/*-full-source.tar.gz dist/*-full-source.zip dist/SHA256SUMS)
           gh release upload "$RELEASE_TAG" "${files[@]}" --clobber

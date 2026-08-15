@@ -51,6 +51,9 @@ jobs:
           PY
           )"
           test "$version" = "$RELEASE_TAG"
+      - name: Package full source with submodules
+        run: ./.github/scripts/package_full_source.sh "$RELEASE_TAG"
+
       - name: Build release assets
         run: |
           ./build_standalone.sh
@@ -70,5 +73,5 @@ jobs:
           if ! gh release view "$RELEASE_TAG" >/dev/null 2>&1; then
             gh release create "$RELEASE_TAG" --title "Kristal i18n Example $RELEASE_TAG" --generate-notes
           fi
-          files=(dist/*.love dist/*-win64.zip dist/*-mod.zip dist/SHA256SUMS)
+          files=(dist/*.love dist/*-win64.zip dist/*-mod.zip dist/*-full-source.tar.gz dist/*-full-source.zip dist/SHA256SUMS)
           gh release upload "$RELEASE_TAG" "${files[@]}" --clobber
