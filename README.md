@@ -20,7 +20,7 @@
 
 **kristal-i18n-example** — an integration test and demo mod for [kristal-i18n](https://github.com/Bli-AIk/kristal-i18n).
 
-This mod translates all English content of the Kristal `v0.10.0` template into Chinese following the [Goodman 3 Localization Group](https://github.com/gm3dr/) translations, and adds an extra light world area to test light world dialogue. It is used to verify and demonstrate the library's localization capabilities. Players can switch between Chinese and English in the in-game **settings menu**.
+This mod translates all English content of the Kristal template into Chinese following the [Goodman 3 Localization Group](https://github.com/gm3dr/) translations, and adds an extra light world area to test light world dialogue. It is used to verify and demonstrate the library's localization capabilities. Players can switch between Chinese and English in the in-game **settings menu**.
 
 | English | 简体中文                        |
 | ------- | ------------------------------- |
@@ -46,7 +46,7 @@ This mod translates all English content of the Kristal `v0.10.0` template into C
 
 | Library                                                 | Description                     |
 | ------------------------------------------------------- | ------------------------------- |
-| [Kristal](https://github.com/KristalTeam/Kristal)       | Game engine, `v0.10.0` or later |
+| [Kristal](https://github.com/KristalTeam/Kristal)       | Game engine                    |
 | [kristal-i18n](https://github.com/Bli-AIk/kristal-i18n) | Chinese localization library    |
 
 ## How to Use

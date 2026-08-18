@@ -20,7 +20,7 @@
 
 **kristal-i18n-example** — [kristal-i18n](https://github.com/Bli-AIk/kristal-i18n) 的集成测试与演示模组。
 
-本模组把 Kristal `v0.10.0` 模板的所有英文内容都按照 [好人汉化组](https://github.com/gm3dr/) 的翻译进行了汉化，并额外加入了一个光世界场景用于测试光世界对话，用于验证和展示库的各项本地化能力。玩家可以在游戏内的**设置菜单**中切换中英文。
+本模组把 Kristal 模板的所有英文内容都按照 [好人汉化组](https://github.com/gm3dr/) 的翻译进行了汉化，并额外加入了一个光世界场景用于测试光世界对话，用于验证和展示库的各项本地化能力。玩家可以在游戏内的**设置菜单**中切换中英文。
 
 | 简体中文 | English                |
 | -------- | ---------------------- |
@@ -46,7 +46,7 @@
 
 | 库                                                      | 说明                           |
 | ------------------------------------------------------- | ------------------------------ |
-| [Kristal](https://github.com/KristalTeam/Kristal)       | 游戏引擎，`v0.10.0` 或更高版本 |
+| [Kristal](https://github.com/KristalTeam/Kristal)       | 游戏引擎                     |
 | [kristal-i18n](https://github.com/Bli-AIk/kristal-i18n) | 中文本地化库                   |
 
 ## 使用方式
