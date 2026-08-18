@@ -4,7 +4,7 @@
 
 ## 这个模组是干嘛的：翻译原版模板
 
-**kristal-i18n-example** 是 [kristal-i18n](https://github.com/Bli-AIk/kristal-i18n) 的集成测试与演示模组，内容就是完整的原版 Kristal `v0.10.0` 模板。最麻烦的部分已经全部做完：
+**kristal-i18n-example** 是 [kristal-i18n](https://github.com/Bli-AIk/kristal-i18n) 的集成测试与演示模组，内容就是完整的原版 Kristal `0.11.0-dev` 模板。最麻烦的部分已经全部做完：
 
 - **模板文本都已提取。** 对话、过场、选项、物品、武器、防具、法术、菜单、存档界面、商店、Debug 菜单、战斗结算、光世界/暗世界 UI——英文原文在 `lang/en.json`，翻译参考在 `lang/zh_hans.json`。
 - **hook 全部就位。** [kristal-i18n](https://github.com/Bli-AIk/kristal-i18n) 库负责所有 hook——你一行 Lua 都不用写。

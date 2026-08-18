@@ -4,7 +4,7 @@ Thank you for wanting to contribute! 🌍
 
 ## What this mod is about: translating the vanilla template
 
-**kristal-i18n-example** is an integration test and demo mod for [kristal-i18n](https://github.com/Bli-AIk/kristal-i18n). Its content is the entire vanilla Kristal `v0.10.0` template, and the heavy lifting is already done:
+**kristal-i18n-example** is an integration test and demo mod for [kristal-i18n](https://github.com/Bli-AIk/kristal-i18n). Its content is the entire vanilla Kristal `0.11.0-dev` template, and the heavy lifting is already done:
 
 - **Every template text has been extracted.** Dialogue, cutscenes, choices, items, weapons, armors, spells, menus, the save screen, the shop, the debug menu, battle results, light/dark world UI — the English originals live in `lang/en.json` and the translated reference in `lang/zh_hans.json`.
 - **All hooks are already in place.** The [kristal-i18n](https://github.com/Bli-AIk/kristal-i18n) library handles every hook — you don't need to write a single line of Lua.
