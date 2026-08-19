@@ -6,3 +6,6 @@
 	path = .emacs
 	url = https://github.com/Bli-AIk/kristal-emacs-config.git
 	branch = stable/lua
+[submodule ".helix"]
+	path = .helix
+	url = git@github.com:Bli-AIk/kristal-helix-config.git
