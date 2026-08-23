@@ -8,6 +8,21 @@ function Mod:init()
         return Squeak(data.x, data.y, {data.width, data.height, data.polygon})
     end)
     print(Game:locText("Loaded [var:name]!", {name = self.info.name}))
+
+    -- Spawn a static test bullet at the center of each battle area.
+    local TEST_BULLET_SPOTS = {
+        room1 = { 140, 820 }, -- battle area rect (40,720,200,200) center
+        room3 = { 100, 260 }, -- battle area rect (40,120,120,280) center
+    }
+    HookSystem.hook(Map, "onEnter", function(orig, self, ...)
+        local result = orig(self, ...)
+        local spot = TEST_BULLET_SPOTS[self.id]
+        if spot and not self.test_bullet_spawned then
+            self.test_bullet_spawned = true
+            Game.world:spawnBullet("test_static", spot[1], spot[2])
+        end
+        return result
+    end)
 end
 
     -- Starwalker (light world): each interaction shuffles the light inventory,
@@ -45,4 +60,3 @@ end
         self.world:showText(line)
         return true
     end)
-

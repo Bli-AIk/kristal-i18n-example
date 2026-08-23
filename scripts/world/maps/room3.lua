@@ -9,8 +9,8 @@ return {
   height = 12,
   tilewidth = 40,
   tileheight = 40,
-  nextlayerid = 6,
-  nextobjectid = 17,
+  nextlayerid = 7,
+  nextobjectid = 18,
   properties = {
     ["light"] = true,
     ["name"] = "Test Map - Room 2",
@@ -267,6 +267,36 @@ return {
             ["text1"] = "{world_room1_starwalker_1}",
             ["text2"] = "{world_room1_starwalker_2}"
           }
+        }
+      }
+    },
+    {
+      type = "objectgroup",
+      draworder = "topdown",
+      id = 6,
+      name = "battleareas",
+      class = "",
+      visible = true,
+      opacity = 1,
+      offsetx = 0,
+      offsety = 0,
+      parallaxx = 1,
+      parallaxy = 1,
+      properties = {},
+      objects = {
+        {
+          id = 17,
+          name = "",
+          type = "",
+          shape = "rectangle",
+          x = 40,
+          y = 120,
+          width = 120,
+          height = 280,
+          rotation = 0,
+          opacity = 1,
+          visible = true,
+          properties = {}
         }
       }
     }
