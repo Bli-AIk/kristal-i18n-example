@@ -1,5 +1,17 @@
 # Changelog
 
+## [0.1.1](https://github.com/Bli-AIk/kristal-i18n-example/compare/v0.1.0...v0.1.1) (2026-08-25)
+
+
+### chore
+
+* release 0.1.1 ([a477d66](https://github.com/Bli-AIk/kristal-i18n-example/commit/a477d663041d83622a19c21f294a0bf83ea70900))
+
+
+### Features
+
+* add battle area test bullets ([d87d783](https://github.com/Bli-AIk/kristal-i18n-example/commit/d87d7837091a4f1c63f1dee1c4a10bf03c2f9595))
+
 ## [0.1.0](https://github.com/Bli-AIk/kristal-i18n-example/compare/v0.0.0...v0.1.0) (2026-08-18)
 
 
