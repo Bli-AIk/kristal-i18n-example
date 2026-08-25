@@ -28,10 +28,10 @@
 
 ## Kristal 版本支持
 
-| `kristal`                                                                                                                    | `kristal-i18n-example` |
-| -------------------------------------------------------------------------------------------------------------------------------| ----- |
-| [v0.11.0-dev](https://github.com/KristalTeam/Kristal/commit/f62afea63ccab02f468c24ac0d096bd8a2c9aa81) (`f62afea`, 2026-08-16) | 0.1.0 |
-| [v0.10.0](https://github.com/KristalTeam/Kristal/commit/752bc0688ba97ca8a256ba9125b7e05a1ca6edbd) (`752bc068`, 2026-06-23)    | 0.0.0 |
+| `kristal`                                                                                                                     | `kristal-i18n-example` |
+| ----------------------------------------------------------------------------------------------------------------------------- | ---------------------- |
+| [v0.11.0-dev](https://github.com/KristalTeam/Kristal/commit/f62afea63ccab02f468c24ac0d096bd8a2c9aa81) (`f62afea`, 2026-08-16) | 0.1.0 - 0.1.1          |
+| [v0.10.0](https://github.com/KristalTeam/Kristal/commit/752bc0688ba97ca8a256ba9125b7e05a1ca6edbd) (`752bc068`, 2026-06-23)    | 0.0.0                  |
 
 ## 特性
 
@@ -45,10 +45,10 @@
 
 ## 依赖
 
-| 库                                                      | 说明                           |
-| ------------------------------------------------------- | ------------------------------ |
-| [Kristal](https://github.com/KristalTeam/Kristal)       | 游戏引擎                     |
-| [kristal-i18n](https://github.com/Bli-AIk/kristal-i18n) | 中文本地化库                   |
+| 库                                                      | 说明         |
+| ------------------------------------------------------- | ------------ |
+| [Kristal](https://github.com/KristalTeam/Kristal)       | 游戏引擎     |
+| [kristal-i18n](https://github.com/Bli-AIk/kristal-i18n) | 中文本地化库 |
 
 ## 使用方式
 
