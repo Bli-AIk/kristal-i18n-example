@@ -1,6 +1,9 @@
 default: test
 
+libs := env("KRISTAL_I18N_EXAMPLE_OPTIONAL_LIBS", "")
+
 # Run the example mod with a local Kristal checkout.
+# libs= accepts comma-separated library ids or aliases; prefix with - to disable.
 run *args:
     #!/usr/bin/env bash
     set -euo pipefail
@@ -34,8 +37,10 @@ run *args:
     # "--" flags, so the i18n library reads them as --lang / --name-lang.
     normalized=()
     pending=
+    library_override="{{ libs }}"
     for arg in {{ args }}; do
         case "$arg" in
+            libs=*) library_override="${arg#libs=}" ;;
             -l) pending="--lang" ;;
             -nl) pending="--name-lang" ;;
             *)
@@ -53,6 +58,7 @@ run *args:
         exit 1
     fi
 
+    export KRISTAL_I18N_EXAMPLE_OPTIONAL_LIBS="$library_override"
     cd "$engine_root"
     exec love "$engine_root" --mod kristal-i18n-example --auto-mod-start "${normalized[@]}"
 

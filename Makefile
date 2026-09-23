@@ -5,6 +5,9 @@ KRISTAL ?=
 test: test-static test-tiled
 
 test-static:
+	luajit tests/optional_libraries.lua
+	luajit tests/i18n_console_segments.lua
+	luajit tests/library_enabled_announce.lua
 	# lib.json carries a release-please inline marker (// x-release-please-version);
 	# strip it before validating with jq.
 	jq empty lang/en.json lang/zh_hans.json libraries/kristal-i18n/lang/en.json libraries/kristal-i18n/lang/zh_hans.json
