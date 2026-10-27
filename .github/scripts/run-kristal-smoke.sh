@@ -28,7 +28,13 @@ rsync -aL --exclude='.git' --exclude='.build' --exclude='dist' "$root/" "$mod_pa
 
 mkdir -p "$sandbox/home" "$sandbox/data" "$sandbox/config" "$sandbox/cache" "$sandbox/runtime"
 chmod 700 "$sandbox/runtime"
-timeout --kill-after=5s 45s xvfb-run -a env \
+# Linux tests always use a reserved display above :99, with normal X11 locks.
+# The wrapper also verifies desktop socket identities and Xwayland PIDs.
+case "$(uname -s)" in
+    Linux*) set -- python3 "$root/.github/scripts/safe-xvfb.py" -- ;;
+    *) set -- ;;
+esac
+timeout --kill-after=5s 45s "$@" env \
     HOME="$sandbox/home" \
     XDG_DATA_HOME="$sandbox/data" \
     XDG_CONFIG_HOME="$sandbox/config" \
